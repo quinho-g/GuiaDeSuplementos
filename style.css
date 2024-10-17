@@ -1,0 +1,196 @@
+  body {
+            background: linear-gradient(to right, #5618ba, #280621);
+            margin: 30px;
+            margin-top; 30px;
+        }
+
+        .botaopp:hover {
+            background-color: hsla(240, 100%, 50%, 0.6);
+        }
+        
+        .kirvano-payment-trigger {
+               padding: 5px;
+               background-color: green;
+               color: white;
+        }
+
+        .kirvano-refuse-trigger {
+               padding: 5px;
+               background-color: red;
+               color: white;
+        }
+
+
+        .container1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        
+        .text-p {
+            max-width: 60%;
+            margin-right: 50px;
+        }
+        .cta {
+           color: white;
+           font-size: 18px;  
+           font-family: Arial, sans-serif;
+           text-align: center;        
+}
+
+           
+        .titulo {
+            margin-right: 50px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+            font-size: 50px;
+            color: #ffffff;
+        }
+         
+         .stitulo {
+            margin-right: 50px;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            color: #f0f0f0;
+ }
+
+         .imagen {
+            margin: 0;
+            width: 450px !important; /* Tamanho fixo da imagem */
+            height: auto; /* Mantém a proporção da imagem */
+            max-width: 100%; /* Garantia de que a imagem não ultrapasse o contêiner */
+        }
+
+         .centro {
+     align-items: center;
+     text-align: center;
+     padding-top: 10px;
+     color: #ffffff;
+     font-family: Arial, sans-serif;
+ } 
+
+
+         .grid {
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     grid-column-gap: 10px;
+     grid-row-gap: 10px;
+     padding: 10px;
+}
+  
+         .tituloc {
+             color: white;
+             font-size: 24px;
+             font-family: Arial, sans-serif;
+}
+
+        .paragrafo {
+             color: white;
+             font-size: 22px;  
+             font-family: Arial, sans-serif;        
+}
+
+        .imgs { 
+           height: 6rem;
+           widht: 6rem;
+}
+
+        .botaopp { 
+            font-family: Arial, sans-serif;
+            display: inline-block;
+            background-color: green;
+            margin: 0 auto;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 8px;
+            color: white;
+            line-height: 2px;
+}
+                    
+        a {
+         color: white;
+         text-decoration: none;
+} 
+
+   h3 {
+    color: white;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    font-style: italic;
+   }
+
+    
+
+        .old-price {
+    position: relative;
+    display: inline-block;
+  }
+
+  .old-price::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: red;
+    transform: rotate(-10deg);
+  }
+
+    .tela {
+       border-radius: 4px;
+       border-style: solid;
+       border-color: white;
+       border-width: 1px;
+       text-align: center; 
+       font-family: Arial, sans-serif; 
+       padding: 10px; 
+}
+
+        
+
+        /* Responsividade para telas menores que 768px (celulares) */
+        @media screen and (max-width: 768px) {
+
+              body {
+                margin: 10px;
+              }
+
+             .text-p {
+            margin-right: -10px;
+            }
+
+            .container1 {
+                flex-direction: column; /* Coloca o texto e a imagem em coluna no celular */
+                align-items: center;
+            }
+
+            .imagen {
+                margin-left: 0; /* Remove o espaçamento lateral em telas pequenas */
+                max-width: 200px !important; /* Reduz o tamanho da imagem para dispositivos móveis */
+            }
+
+            .titulo {
+                font-size: 30px; /* Reduz o tamanho do título em telas menores */
+                line-height: 30px;
+            }
+
+            .stitulo {
+                font-size: 16px; /* Reduz o tamanho do subtítulo em telas menores */
+            }
+
+            .text-p {
+                max-width: 90%; /* Faz com que o texto ocupe mais largura em telas pequenas */
+            }
+
+            .grid {
+               grid-template-columns: 1fr;
+            }
+            
+             .imgs { 
+                   height: 6rem;
+                   widht: 6rem;
+            } 
+}
